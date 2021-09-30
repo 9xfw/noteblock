@@ -27,10 +27,6 @@ module.exports = class ResumeCommand extends Command {
     }
   }
 
-  /**
-   *
-   * @param {import('discord.js').CommandInteraction} interaction
-   */
   async executeSlash(interaction) {
     try {
       const GuildPlayers = this.client.erela.players.get(interaction.guild.id);
